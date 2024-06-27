@@ -12,8 +12,14 @@ const btnValues = [
 ];
 
 const App = () => {
+  let [calc, setCalc] = useState({
+    sign: "",
+    num: 0,
+    res: 0,
+  });
   return (
     <Wrapper>
+      <Screen value={0} />
       <Screen value={0} />
       <ButtonBox>
         {
